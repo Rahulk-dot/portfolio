@@ -15,6 +15,9 @@ const ProjectSchema = new mongoose.Schema({
   siteLink:{
     type: String,
   },
+  user:{
+    type: String,
+  },
   document: {
     type: Number,
   },

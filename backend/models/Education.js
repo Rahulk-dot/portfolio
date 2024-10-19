@@ -5,6 +5,10 @@ const EducationSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  degree:{
+    type: String,
+    required: true,
+  },
   startDate: {
     type: Date,
     required: true,
@@ -12,15 +16,15 @@ const EducationSchema = new mongoose.Schema({
   endDate:{
     type: Date,
   },
-  degree:{
-    type: String,
-  },
-  schoolAddress:{
+  schoolPlace:{
     type: String,
   },
   description:{
     type: String,
-  }
+  },
+  user:{
+    type: String,
+  },
 });
 
 module.exports = mongoose.model('Education', EducationSchema);
